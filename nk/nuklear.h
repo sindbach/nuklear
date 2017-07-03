@@ -3227,7 +3227,7 @@ NK_API int nk_input_is_key_down(const struct nk_input*, enum nk_keys);
     In fact it is probably more powerful than needed but allows even more crazy
     things than this library provides by default.
 */
-typedef nk_ushort nk_draw_index;
+typedef nk_uint nk_draw_index;
 enum nk_draw_list_stroke {
     NK_STROKE_OPEN = nk_false,
     /* build up path has no connection back to the beginning */

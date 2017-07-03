@@ -82,7 +82,7 @@ type QueryFontGlyphF func(handle Handle, fontHeight float32, glyph *UserFontGlyp
 type CommandCustomCallback func(canvas unsafe.Pointer, x int16, y int16, w uint16, h uint16, callbackData Handle)
 
 // DrawIndex type as declared in nk/nuklear.h:3230
-type DrawIndex uint16
+type DrawIndex uint32
 
 // Allocator as declared in nk/nuklear.h:427
 type Allocator C.struct_nk_allocator

@@ -117,7 +117,7 @@ func NkPlatformRender(aa AntiAliasing, maxVertexBuffer, maxElementBuffer int) {
 				int32(clipRect.W()*state.fbScaleX),
 				int32(clipRect.H()*state.fbScaleY),
 			)
-			gl.DrawElements(gl.TRIANGLES, int32(elemCount), gl.UNSIGNED_SHORT, unsafe.Pointer(offset))
+			gl.DrawElements(gl.TRIANGLES, int32(elemCount), gl.UNSIGNED_INT, unsafe.Pointer(offset))
 			offset += uintptr(elemCount) * sizeofDrawIndex
 		})
 
